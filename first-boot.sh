@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get -qq install \
+apt-get -qq -y install \
  aptitude \
  software-properties-common \
  build-essential \
@@ -16,11 +16,11 @@ apt-get -qq install \
 
 add-apt-repository -y ppa:bitcoin/bitcoin 
 
-apt-get -qq update
-apt-get -qq upgrade
-apt-get -qq autoremove
+apt-get -qq -y update
+apt-get -qq -y upgrade
+apt-get -qq -y autoremove
 
-apt-get -qq install \
+apt-get -qq -y install \
  libssl-dev \
  libboost-all-dev \
  libdb4.8-dev \
